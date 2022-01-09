@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+
+.clr{
+    clear: both;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --one: #3ca2a2;
+    --hover: #f18d26;
+    --red: #be0b11;
+    --heading: #215a6d;
+}
+
+.transition{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;    
+}
+/* ==========================================================
+                        Common css end
+===========================================================*/
+/* ==========================================================
+                        Header part start
+===========================================================*/
+#header{
+    padding: 13px 0 17px;
+}
+
+.logo{
+    width: 83px;
+}
+
+.header_text{
+    width: 635px;
+}
+
+.header_number{
+    width: 252px;
+    text-align: right;
+}
+
+.header_text h2{
+    color: var(--one);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 88px;
+    padding-left: 11px;
+}
+
+.header_number a{
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 88px;
+    
+}
+/* ==========================================================
+                        Header part end
+===========================================================*/
+/* ==========================================================
+                        Navigation part start
+===========================================================*/
+#menu{
+    background: linear-gradient(to top,#ae1010 0%, #cf0511 100%);
+}
+
+.main_menu{
+    width: 870px;
+}
+
+.menu_icon{
+    width: 100px;
+    line-height: 50px;
+}
+
+.main_menu ul li a{
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.main_menu ul li a:hover{
+    background: var(--hover);
+}
+
+.menu_icon a{
+    width: 26px;
+    height: 26px;
+    color: var(--red);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #fff;
+    line-height: 26px;
+    text-align: center;
+}
+
+.menu_icon a:hover{
+    background: var(--hover);
+    color: #fff;
+}
+/* ==========================================================
+                        Navigation part end
+===========================================================*/
+/* ==========================================================
+                        Banner part start
+===========================================================*/
+#banner{
+    padding: 75px 0;
+}
+
+.banner_text{
+    width: 445px;
+}
+
+.banner_text h1{
+    color: var(--heading);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.banner_text h1 span{
+    color: var(--heading);
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+    margin-top: -12px;
+}
+
+.banner_text p{
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 13px;
+    padding-right: 140px;
+}
+
+.banner_text a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    background: #92c7a3;
+    padding: 15px 25px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 40px;
+}
+
+.banner_text a:hover{
+    background: var(--hover);
+}
+
+.banner_cont{
+    position: relative;
+}
+
+.banner_img{
+    width: 585px;
+    position: absolute;
+    right: -15px;
+    bottom: -75px;
+}
+
+.banner_img img{
+    width: 100%;
+    max-width: 100%;
+}
+/* ==========================================================
+                        Banner part end
+===========================================================*/
+/* ==========================================================
+                        Service part start
+===========================================================*/
+#service{
+    padding: 65px 0;
+}
+
+.ser_col{
+    text-align: center;
+    padding: 0 15px;
+}
+
+.ser_col h3{
+    color: var(--one);
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.ser_col p{
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.ser_col a{
+    color: #92c7a3;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 19px;
+    margin-right: 30px;
+}
+
+.ser_col a i{
+    color: var(--red);
+}
+/* ==========================================================
+                        Service part end
+===========================================================*/
+/* ==========================================================
+                        Notice part start
+===========================================================*/
+#notice{
+    padding: 30px 0;
+    background: #dfece6;
+}
+
+.notice_col{
+    width: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.notice_col:last-child{
+    margin-right: 0;
+}
+
+.common_head h2{
+    color: var(--heading);
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+.common_head h2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.common_head h2::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 54px;
+    height: 2px;
+    background: var(--red);
+    z-index: 1;
+}
+
+.notice_inner ul{
+    padding-top: 35px;
+}
+
+.notice_inner ul li{
+    color: var(--one);
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--one);
+    line-height: 42px;
+    background: #fff;
+    padding-left: 15px;
+}
+
+.notice_inner ul li:last-child{
+    border-bottom: none;
+}
+
+.notice_inner ul li i{
+    color: #fff;
+    padding: 0 13px;
+    background: var(--red);
+    line-height: 42px;
+    float: right;
+}
+
+.notice_inner a{
+    color: var(--red);
+    padding-top: 25px;
+    padding-left: 3px;
+}
+
+.notice_inner img{
+    width: 100%;
+    max-width: 100%;
+    padding-top: 44px;
+    padding-left: 10px;
+}
+/* ==========================================================
+                        Notice part end
+===========================================================*/
+/* ==========================================================
+                        Gallery part start
+===========================================================*/
+#gallery{
+    padding: 55px 0;
+}
+
+.gal_border h2::after{
+    background: #f1f1f1;
+}
+
+.gal_col{
+    width: 32%;
+    float: left;
+    margin-right: 30px;
+}
+
+.gal_col:last-child{
+    margin-right: 0;
+}
+
+.news_inner h4{
+    color: var(--one);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 35px;
+}
+
+.news_inner p{
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.news_inner a{
+    color: var(--one);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 33px;
+}
+
+.news_inner a i{
+    color: var(--red);
+}
+
+.news_inner p:nth-child(2){
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 27px;
+}
+
+.news_inner h4:nth-child(3){
+    margin-top: -10px;
+}
+
+.news_inner ul{
+    padding-top: 35px;
+}
+
+.news_inner ul li{
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.news_inner ul li i{
+    color: var(--red);
+    padding-right: 5px;
+}
+
+.gal_img img{
+    width: 44.99%;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border: 4px solid #dfece6;
+}
+
+.gal_img{
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+
+.gal_img img:nth-child(2),
+.gal_img img:last-child{
+    margin-right: 0;
+}
+
+.icon a{
+    padding-top: 85px;
+}
+
+.icon-1 a{
+    padding-top: 69px;
+}
+/* ==========================================================
+                        Gallery part end
+===========================================================*/
+/* ==========================================================
+                        Doctor part start
+===========================================================*/
+#doctor{
+    padding-bottom: 75px;
+}
+
+.doc_border h2::after{
+    background: #f1f1f1;
+}
+
+.doc_col h3{
+    color: var(--one);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.doc_col h4{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.doc_col p{
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.doc_col{
+    float: left;
+    width: 31.26%;
+    margin-right: 30px;
+    padding-top: 30px;
+}
+
+.doc_col:last-child{
+    margin-right: 0;
+}
+
+.doc_col .doc_img img{
+    width: 100%;
+    max-width: 100%;
+}
+/* ==========================================================
+                        Doctor part end
+===========================================================*/
+/* ==========================================================
+                        Footer part start
+===========================================================*/
+.footer_top{
+    padding: 24px 0 44px;
+    background: #222222;
+}
+
+.footer_logo h2{
+    color: var(--one);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 88px;
+    margin-left: 10px;
+}
+
+.footer_left h3{
+    color: var(--one);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 46px;
+}
+
+.footer_left ul{
+    margin-top: 25px;
+}
+
+.footer_left ul li a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400px;
+    padding-left: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.footer_left ul li a:hover{
+    color: #c6ded9;
+}
+
+.footer_left ul li a i{
+    color: var(--red);
+    margin-right: 5px;
+    padding-top: 20px;
+}
+
+.footer_left{
+    float: left;
+    width: 25%;
+}
+
+.footer_bottom{
+    background: var(--red);
+    padding: 18px 0;
+    text-align: center;
+}
+
+.footer_bottom p{
+    color: #c6ded9;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* ==========================================================
+                        Footer part end
+===========================================================*/
